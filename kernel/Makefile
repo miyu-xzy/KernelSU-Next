@@ -16,7 +16,6 @@ ccflags-y += -I$(objtree)/security/selinux -include $(srctree)/include/uapi/asm-
 
 obj-$(CONFIG_KSU) += kernelsu.o
 
-<<<<<<< HEAD
 REPO_OWNER := KernelSU-Next
 REPO_NAME := KernelSU-Next
 REPO_BRANCH := next
@@ -33,7 +32,7 @@ ifeq ($(KSU_GITHUB_VERSION),)
     $(eval KSU_VERSION := $(shell expr 10000 + $(KSU_LOCAL_VERSION) + 200))
     $(info -- KernelSU-Next version (local .git): $(KSU_VERSION))
   else
-    $(eval KSU_VERSION := 12704)
+    $(eval KSU_VERSION := 12706)
     $(warning -- Could not fetch version online or via local .git! Using fallback version: $(KSU_VERSION))
   endif
 else
